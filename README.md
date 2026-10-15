@@ -127,3 +127,44 @@ Checklist này cũng có trong panel demo của app. Bấm vào một bước s�
 - **Hình khối:** ô nhập và nút bo pill, thẻ (card) bo góc 12px.
 - **Logo:** khối lập phương isometric 3D, mặt trên là hai chữ T đan nhau (file `favicon.svg`).
 - **Component sheet:** mở từ panel demo, tổng hợp toàn bộ component của app.
+
+---
+
+# T&T Seller Center: trang quản lý người bán (desktop-first)
+
+File `seller.html`, mở trực tiếp hoặc vào `https://…vercel.app/seller` sau khi deploy. Nhân vật demo là shop **Hanoi Ceramic House**. Giao diện dùng chung token, font và logo với app mua hàng, hỗ trợ VI/EN.
+
+- **Desktop:** sidebar + Copilot dạng panel phải.
+- **Tablet:** sidebar thu thành cột icon.
+- **Mobile:** 5 tab dưới, bảng tự chuyển thành card.
+
+## Đăng nhập demo
+
+| Mục | Giá trị |
+|---|---|
+| Tài khoản | `hanoiceramic@tt.shop` / `Seller1234` (có sẵn trong "Tài khoản đã lưu" khi bấm vào ô Email) |
+| Sai mật khẩu 3 lần | Tạm khoá, gợi ý đặt lại mật khẩu |
+
+## 12 màn
+
+S1 Đăng nhập · S2 Tổng quan · S3 Đơn hàng · S4 Chi tiết đơn · S5 Sản phẩm · S6 Thêm/sửa sản phẩm · S7 Đánh giá · S8 Báo cáo · S9 Khuyến mãi · S10 Tài chính · S11 Tin nhắn · S12 Cài đặt. Ngoài ra còn có Component sheet (P0), bảng ⌘K và thông báo.
+
+## AI trong Seller Center
+
+| Tính năng | Ở đâu |
+|---|---|
+| ① Bản tin AI mỗi sáng | Tổng quan: 4 việc ưu tiên, nút hành động, "Hỏi thêm" mở Copilot |
+| ④ Phân tích review | Đánh giá: gom nhóm chủ đề, AI soạn trả lời theo 3 giọng và theo ngôn ngữ của khách |
+| ⑦ Hỏi đáp dữ liệu | Copilot (nút ✨ Hỏi AI) và ô "Hỏi dữ liệu" trong Báo cáo |
+| Gợi ý nhỏ theo ngữ cảnh | Cảnh báo đơn COD rủi ro, dự báo tồn kho, gợi ý voucher, gợi ý trả lời chat, gợi ý chính sách đổi trả |
+
+Mọi nội dung AI đều có nhãn ✨. Người bán luôn là người bấm gửi hoặc áp dụng.
+
+## Kịch bản demo và tự chạy
+
+- **Nút ☰ Kịch bản demo:** checklist theo từng phase (P0–P5, tự tick khi làm đúng), 11 bước kịch bản, danh sách 12 màn. Nút "Chỉ chỗ" đưa người xem tới đúng vị trí.
+- **Nút ▶ Chạy demo** (trên topbar, màn đăng nhập hoặc trong panel Kịch bản):
+  - Đặt lại dữ liệu rồi tự đi qua **16 bước** "buổi sáng của chủ shop": đăng nhập → bản tin AI → xử lý đơn hàng loạt → đơn COD rủi ro → in và bàn giao vận đơn → duyệt huỷ → nhập hàng → tạo sản phẩm → review → tin nhắn → báo cáo → voucher → rút tiền → đổi trả 14 ngày.
+  - Tốc độ Chậm / Vừa / Nhanh; có Dừng / Tiếp / Thoát (phím Space / Esc).
+  - Khoảng 70 giây ở Nhanh, 2–3 phút ở Vừa. Chạy được trên cả desktop và mobile.
+- **Đặt lại dữ liệu:** nút "Đặt lại dữ liệu demo" ở cuối tab Duyệt trong panel Kịch bản.
